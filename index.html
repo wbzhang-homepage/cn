@@ -273,21 +273,7 @@ He is currently pursuing a PhD in mechanical engineering at Jiangsu University u
 </td></tr></table>	
 	
 	
-	
-<?php
-@session_start();
-$counter = intval(file_get_contents("counter.dat"));
-if(!$_SESSION['#'])
-{
-$_SESSION['#'] = true;
-$counter++;
-$fp = fopen("counter.dat","w");
-fwrite($fp, $counter);
-fclose($fp);
-}
-?>
-<p align="center">您是到访的第<?php echo "$counter";?>位用户</p>
-	
+
 	
 	
 	
@@ -298,7 +284,7 @@ fclose($fp);
 Date("5/22/2022 15:00:00");
 Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
 a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
-<p align="center">runtime_span.innerHTML="本站已运行:"+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime()</p>;
+runtime_span.innerHTML="本站已运行:"+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();
 </script>
 
 	
